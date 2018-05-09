@@ -2,6 +2,10 @@
 <?php
 require_once('connect.php');
 print_r($_POST);
+echo "<br>";
+echo $nUsuario=$_POST["nUsuario"];
+echo "<br>";
+echo $userPassword=$_POST["userPassword"];
 ?>
 <html lang="es-ES">
 
@@ -17,7 +21,7 @@ print_r($_POST);
 
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 
-	</head>
+	</head>	
 
 	<body>
 
