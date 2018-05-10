@@ -2,8 +2,7 @@
 <?php
 session_start();
 require_once('connect.php');
-if (isset($_POST) & !empty($_POST)) {
-	
+if (isset($_POST) & !empty($_POST)) {	
 	
 	 $nusuario=$_POST["nUsuario"];	
 	 $userpassword=$_POST["userPassword"];
@@ -36,35 +35,33 @@ if(isset($_SESSION['usuario'])){
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
+        <style>
+        div#Registro{
+        display:flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        }
+        div#Registro>*{
+        padding:5px;
+        }
+        div#Registro>form{
+            display:flex;
+            flex-direction: column;
+        }
+        </style>
 
 	</head>	
+    <style>
+    #registro{
+        display
+    }
+    </style>
 
 	<body>
+      					<div id="pantallaRegistro">
 
-		<div id="wrapper">
-
-			<header id="header">
-					
-				<div id="logo">
-
-					<span></span>
-
-					<p>Actividades culturales y de ocio municipal</p>
-
-				</div>
-				
-				<div id="sesion">
-
-					<input type="checkbox" id="iSesion">
-
-      					<label for="iSesion">
-      						<span></span>
-      						Registro
-      					</label>
-
-      					<div id="pantallaSesion">
-
-      						<div id="inicioSesion">
+      						<div id="Registro">
 								
 								<h1>Iniciar sesión</h1>
 
@@ -106,11 +103,7 @@ if(isset($_SESSION['usuario'])){
       					</div>
 
 
-				</div>
 
-            </header>
-
-            </div>
 
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDq_lJvM8dDz84x204rDOwjuMIExZnNEac"></script>
 
