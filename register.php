@@ -59,7 +59,7 @@ if(isset($_SESSION['usuario'])){
 
       					<label for="iSesion">
       						<span></span>
-      						Iniciar sesión
+      						Registro
       					</label>
 
       					<div id="pantallaSesion">
@@ -77,13 +77,27 @@ if(isset($_SESSION['usuario'])){
 
       								<input type="text" name="nUsuario" placeholder="nombre de usuario">
 
+      								<label>Nombre</label>
+
+      								<input type="text" name="nombre" placeholder="nombre">
+
+      								<label>Apellidos</label>
+
+      								<input type="text" name="apellidos" placeholder="apellidos">
+
+      								<label>email</label>
+
+      								<input type="text" name="email" placeholder="email">
+
       								<label>Contraseña</label>
 
       								<input type="password" name="userPassword">
 
-      								<button type="submit">Conectar<span>></span></button>
+      								<label>Repita la contraseña</label>
 
-      								<p>¿Aún no tienes cuenta? <a href="#">Regístrate</a></p>
+      								<input type="password" name="userPassword">
+
+      								<button type="submit">Registrar<span>></span></button>
 
       							</form>
 

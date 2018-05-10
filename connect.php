@@ -1,5 +1,5 @@
 <?php  
-$connection = mysqli_connect('localhost', 'event', '3venT');
+$connection = mysqli_connect('localhost', 'root', '');
 if(!$connection){
     die("Fallo de conexion con la base de datos" . mysqli_error($connection));
 }
