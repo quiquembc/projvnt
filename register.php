@@ -21,8 +21,9 @@ if (isset($_POST) & !empty($_POST)) {
 	 }
 	 //si el usuario esta registrado el contador devolvera uno
 	 //$contador=mysqli_num_rows($consulta);
-
-
+	 }
+	 else{
+		 echo "Las contraseñas no coinciden";
 	 }
 }
 ?>
@@ -54,9 +55,7 @@ if (isset($_POST) & !empty($_POST)) {
 		flex-direction: column;
         }
         </style>
-
 	</head>	
-
 	<body>
       					<div id="pantallaRegistro">
 
@@ -114,9 +113,6 @@ if (isset($_POST) & !empty($_POST)) {
       						</div>
 
       					</div>
-
-
-
 
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDq_lJvM8dDz84x204rDOwjuMIExZnNEac"></script>
 
