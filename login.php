@@ -59,7 +59,13 @@ if(isset($_SESSION['usuario'])){
 
       					<label for="iSesion">
       						<span></span>
-      						Iniciar sesión
+							  <?php
+							  if(isset($_SESSION['usuario'])){
+								echo "Bienvenido: ".$_SESSION['usuario'];
+								}
+								else {
+									echo "Iniciar sesion";
+								}?>
       					</label>
 
       					<div id="pantallaSesion">
