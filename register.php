@@ -12,6 +12,7 @@ if (isset($_POST) & !empty($_POST)) {
 	 $userpassword1=$_POST["password1"];
 	 $userpassword2=$_POST["password2"];
 	 if ($userpassword1==$userpassword2){
+		 $userpassword1=md5($_POST["password1"]);
 	$sql="INSERT INTO `usuarios` (nombreusuario,password,nombre,apellidos,email) VALUES ('$nombreusuario','$userpassword1','$nombre','$apellidos','$email') ";
 	 $insercion=mysqli_query($connection,$sql);	 
 	 if($insercion){

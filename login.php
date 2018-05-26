@@ -6,7 +6,7 @@ if (isset($_POST) & !empty($_POST)) {
 	
 	
 	 $nusuario=$_POST["nUsuario"];	
-	 $userpassword=$_POST["userPassword"];
+	 $userpassword=md5($_POST["userPassword"]);
 	 $sql="SELECT * FROM `usuarios` WHERE nombreusuario='$nusuario' AND password='$userpassword'";
 	 //la tabla sin comillas o no funcionara la consulta
 	 $consulta=mysqli_query($connection,$sql);	 
